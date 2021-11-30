@@ -17,6 +17,7 @@ class SampleTest {
 
     @Test
     void Simple_fact() {
-        assertEquals(0, new Sample().fact(0));
+        int number = -1;
+        org.assertj.core.api.Assertions.assertThatExceptionOfType(IllegalArgumentException.class).isThrownBy(() -> new Sample().fact(number)).withMessage("N should be positive");
     }
 }
