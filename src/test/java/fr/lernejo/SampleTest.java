@@ -20,8 +20,9 @@ class SampleTest {
         int number = -1;
         org.assertj.core.api.Assertions.assertThatExceptionOfType(IllegalArgumentException.class).isThrownBy(() -> new Sample().fact(number)).withMessage("N should be positive");
     }
+
     @Test
     void Simple_fact_deux(){
-        assertEquals(3,new Sample().fact(6));
+        assertEquals(6,new Sample().fact(3));
     }
 }
