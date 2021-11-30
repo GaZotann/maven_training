@@ -4,3 +4,9 @@
 
 # Maven
 target/
+
+#codecov
+*.gcno
+*.gcda
+*.gcov
+test
