@@ -22,6 +22,6 @@ class SampleTest {
     }
     @Test
     void Simple_fact_deux(){
-        assertEquals(0,new Sample().fact(0));
+        assertEquals(3,new Sample().fact(6));
     }
 }
